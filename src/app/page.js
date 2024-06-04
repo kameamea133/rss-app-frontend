@@ -11,7 +11,7 @@ export default function Home() {
 
   const getArticlesFrom01Net = async () => {
     try{
-        const res = await axios.get("http://localhost:4000/net");
+        const res = await axios.get("https://rss-app-backend.vercel.app/net");
         setArticles01Net(res.data)
     } catch (error) {
       console.log(error)
@@ -20,7 +20,7 @@ export default function Home() {
 
   const getArticlesWelcomeTo = async () => {
     try{
-        const res = await axios.get("http://localhost:4000/welcometo");
+        const res = await axios.get("https://rss-app-backend.vercel.app/welcometo");
         setArticlesWelcome(res.data)
     } catch (error) {
       console.log(error)
@@ -29,7 +29,7 @@ export default function Home() {
   
   const getArticlesFromActusGaming = async () => {
     try{
-        const res = await axios.get("http://localhost:4000");
+        const res = await axios.get("https://rss-app-backend.vercel.app/");
         
         setArticles(res.data)
     } catch (error) {
